@@ -45,7 +45,7 @@ function component(width, height, color, x, y, type) {
   this.y = y;
   this.gravity = 0;
   this.gravitySpeed = 0;
-  this.update = async function () {
+  this.update = function () {
     ctx = myGameArea.context;
     if (this.type == 'icon') {
       let icon = new Image(this.width, this.height);
