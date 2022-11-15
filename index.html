@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>jCopter v1.0</title>
+</head>
+<body>
+  <main>
+    <div class="intro content">
+      <img src="./assets/images/logo.png" alt="jCopter - v1.0">
+      <div class="start">
+        <a href="javascript: startGame()">
+          <img src="./assets/images/start.png" alt="start game" width="120">
+        </a>
+      </div>
+    </div>
+    <div class="game content none">
+      <div id="wrapper"></div>
+      <div class="accelerate">
+        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">
+          <img src="./assets/images/accelerate.png" alt="accelerate" width="120">
+        </button>
+      </div>
+      <div class="exploded none">The helicopter exploded...</div>
+    </div>
+  </main>
+  <div class="none">
+    <audio id="sound-explosion">
+        <source src="./assets/sounds/explosion.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound-bg" loop>
+        <source src="./assets/sounds/helicopter.mp3" type="audio/mp3">
+    </audio>
+</div>
+  <script src="assets/js/game.js"></script>
+</body>
+</html>
